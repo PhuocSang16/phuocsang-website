@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặng Phước Sang - Trang Web Cá Nhân</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0779e4 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        #showcase {
+            min-height: 400px;
+            background: #0779e4 url('showcase.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding-top: 100px;
+        }
+        #showcase h1 {
+            font-size: 55px;
+            margin-top: 0;
+        }
+        #showcase p {
+            font-size: 20px;
+        }
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #fff;
+            background-color: #333;
+            text-align: center;
+        }
+        .main-content {
+            padding: 20px;
+            background: #fff;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .social a {
+            text-decoration: none;
+            color: #0779e4;
+            margin: 0 10px;
+        }
+        .social a:hover {
+            text-decoration: underline;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .project {
+            background: #fff;
+            margin: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 0 0 30%;
+            box-sizing: border-box;
+            transition: transform 0.2s;
+        }
+        .project:hover {
+            transform: scale(1.05);
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 10px;
+            border: none;
+            background: #0779e4;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .contact-form button:hover {
+            background: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Đặng Phước Sang</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">Giới thiệu</a></li>
+                    <li><a href="#interests">Sở thích</a></li>
+                    <li><a href="#projects">Dự án</a></li>
+                    <li><a href="#contact">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Chào mừng đến với trang web cá nhân của tôi!</h1>
+            <p>Sinh viên năm 4 Trường Đại học Công nghệ Thông tin (UIT)</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <section id="about" class="main-content">
+            <h2>Giới thiệu</h2>
+            <p>Xin chào! Tôi là Đặng Phước Sang, sinh viên năm 4 tại Trường Đại học Công nghệ Thông tin (UIT). Tôi có đam mê với công nghệ và luôn khao khát học hỏi, khám phá những điều mới mẻ.</p>
+        </section>
+
+        <section id="interests" class="main-content">
+            <h2>Sở thích</h2>
+            <p>Tôi có nhiều sở thích như đọc sách, chơi game, nghe nhạc và xem thể thao. Những hoạt động này giúp tôi thư giãn và lấy lại năng lượng sau những giờ học tập căng thẳng.</p>
+        </section>
+
+        <section id="projects" class="main-content">
+            <h2>Dự án</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Dự án 1</h3>
+                    <p>Mô tả ngắn về dự án 1.</p>
+                </div>
+                <div class="project">
+                    <h3>Dự án 2</h3>
+                    <p>Mô tả ngắn về dự án 2.</p>
+                </div>
+                <div class="project">
+                    <h3>Dự án 3</h3>
+                    <p>Mô tả ngắn về dự án 3.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="main-content">
+            <h2>Liên hệ</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Tên của bạn" required>
+                <input type="email" placeholder="Email của bạn" required>
+                <textarea rows="5" placeholder="Tin nhắn của bạn" required></textarea>
+                <button type="submit">Gửi</button>
+            </form>
+            <p>Bạn cũng có thể liên hệ với tôi qua các kênh sau:</p>
+            <div class="social">
+                <a href="https://www.facebook.com/sang.phuoc.562/" target="_blank" rel="noopener noreferrer">Facebook</a> | 
+                <a href="https://www.linkedin.com/in/sang-%C4%91%E1%BA%B7ng-ph%C6%B0%E1%BB%9Bc-970551257/" target="_blank" rel="noopener noreferrer">LinkedIn</a> | 
+                <a href="https://github.com/PhuocSang16" target="_blank" rel="noopener noreferrer">Github</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Đặng Phước Sang &copy; 2024</p>
+    </footer>
+</body>
+</html>
