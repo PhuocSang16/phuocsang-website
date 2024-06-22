@@ -116,3 +116,31 @@ footer {
 .contact-form button:hover {
     background: #005bb5;
 }
+
+/* Cuộn mượt */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Menu responsive */
+.menu-toggle {
+    display: none;
+    background: #0779e4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+    nav.nav-open ul {
+        display: flex;
+    }
+    .menu-toggle {
+        display: block;
+    }
+}
