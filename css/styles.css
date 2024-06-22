@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #0779e4 3px solid;
+}
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+header ul {
+    padding: 0;
+    list-style: none;
+}
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+header #branding {
+    float: left;
+}
+header #branding h1 {
+    margin: 0;
+}
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+#showcase {
+    min-height: 400px;
+    background: #0779e4 url('showcase.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding-top: 100px;
+}
+#showcase h1 {
+    font-size: 55px;
+    margin-top: 0;
+}
+#showcase p {
+    font-size: 20px;
+}
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #333;
+    text-align: center;
+}
+.main-content {
+    padding: 20px;
+    background: #fff;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.social a {
+    text-decoration: none;
+    color: #0779e4;
+    margin: 0 10px;
+}
+.social a:hover {
+    text-decoration: underline;
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.project {
+    background: #fff;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 0 0 30%;
+    box-sizing: border-box;
+    transition: transform 0.2s;
+}
+.project:hover {
+    transform: scale(1.05);
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-form button {
+    padding: 10px;
+    border: none;
+    background: #0779e4;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.contact-form button:hover {
+    background: #005bb5;
+}
